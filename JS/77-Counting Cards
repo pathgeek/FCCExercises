@@ -20,7 +20,7 @@ be separated by a single space.
 
 Example Output
       "-3 Hold"
-      "5 Bet"
+      "5 Bet"     
 
 Hint: Do NOT reset count to 0 when value is 7, 8, or 9.
 ==============================================================================
