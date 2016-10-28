@@ -1,0 +1,10 @@
+function palindrome(str) {
+  // remove all non-alphanumeric characters (punctuation, spaces, symbols)
+  str = str.toLowerCase(); // move to lowercase
+  str = str.replace(/[^A-Z0-9]/ig, ""); //remove non-alphanumerics
+  var revStr = str.split("");
+  return str == revStr.reverse().join("");
+
+}
+
+palindrome("eye");
