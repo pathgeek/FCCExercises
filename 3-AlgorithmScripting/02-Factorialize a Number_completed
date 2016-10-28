@@ -1,4 +1,5 @@
 function factorialize(num) {
+<<<<<<< HEAD
     if (num === 0){
         return 1;
     }
@@ -16,4 +17,9 @@ function factorialize(num) {
         return num;
 }
 }
+=======
+  return num;
+}
+
+>>>>>>> origin/master
 factorialize(5);
