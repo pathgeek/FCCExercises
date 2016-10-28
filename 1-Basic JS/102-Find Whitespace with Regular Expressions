@@ -9,7 +9,6 @@ The whitespace regular expression looks like this:
 Instructions: Use \s to select all the whitespace characters in the sentence
               string.
 ===============================================================================
-
 // Setup
 var testString = "How many spaces are there in this sentence?";
 
