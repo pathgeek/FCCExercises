@@ -1,5 +1,25 @@
 function factorialize(num) {
+<<<<<<< HEAD
+    if (num === 0){
+        return 1;
+    }
+    return  num * factorialize(num-1);
+}
+factorialize(5);
+
+//=========== USING FOR LOOP =======================
+function factorialize(num) {
+    if (num === 0){
+      return 1;
+    } else {
+    for (var i = num -1; i >=1; i--)
+        num *=i;
+        return num;
+}
+}
+=======
   return num;
 }
 
+>>>>>>> origin/master
 factorialize(5);
