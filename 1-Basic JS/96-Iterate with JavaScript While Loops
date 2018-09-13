@@ -15,9 +15,13 @@ Instructions: Push the numbers 0 through 4 to myArray using a while loop.
 
 // Setup
 var myArray = [];
-var i = 0;
-while (i<5){
-  myArray.push(i);
-  i++;
-}
+var i = 10;
+
 // Only change code below this line.
+
+do {
+  myArray.push(i);
+  console.log(myArray);
+  i++
+  console.log(i);
+} while (i <11);
