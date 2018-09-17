@@ -14,4 +14,10 @@ capital letter. This shortcut is the same as [^A-Za-z0-9_].
 Use the shorthand character class \W to count the number of non-alphanumeric characters 
 in various quotes and strings.
 PROVIDED:
+let quoteSample = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /this/; // Change this line
+let result = quoteSample.match(nonAlphabetRegex).length;
 SOLUTION:
+let quoteSample = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/g; // Change this line
+let result = quoteSample.match(nonAlphabetRegex).length;
