@@ -27,3 +27,12 @@ PROVIDED:
           console.log(spreadOut());
           
 SOLUTION:
+function spreadOut() {
+  let fragment = ['to', 'code'];
+  let end = ['is', 'fun'];
+  let sentence =['learning', ...fragment,...end]; // change this line
+  return sentence;
+}
+
+// do not change code below this line
+console.log(spreadOut());
