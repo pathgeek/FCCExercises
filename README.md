@@ -1,1 +1,1 @@
-# FCCExercises
+# FCCExercises: FreeCodeCamp Exercises and Solutions
