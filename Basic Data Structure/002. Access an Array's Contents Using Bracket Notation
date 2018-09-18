@@ -34,3 +34,8 @@ PROVIDED:
       console.log(myArray);
 
 SOLUTION:
+            let myArray = ["a", "b", "c", "d"];
+            // change code below this line
+            myArray[1]= 0;
+            //change code above this line
+            console.log(myArray);
