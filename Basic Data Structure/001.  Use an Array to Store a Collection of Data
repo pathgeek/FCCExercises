@@ -45,3 +45,4 @@ PROVIDED:
 let yourArray; // change this line
 
 SOLUTION:
+let yourArray = ['string', 0, true, false, "elite"]; // change this line
