@@ -39,3 +39,16 @@ PROVIDED:
           console.log(foods);
 
 SOLUTION:
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28
+};
+
+// change code below this line
+foods.bananas = 13;
+foods.strawberries = 27;
+foods.grapes = 35;
+// change code above this line
+
+console.log(foods);
