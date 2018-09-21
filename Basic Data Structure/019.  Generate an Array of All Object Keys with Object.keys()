@@ -36,3 +36,4 @@ PROVIDED:
         console.log(getArrayOfUsers(users));
         
 SOLUTION:
+  return Object.keys(obj);
