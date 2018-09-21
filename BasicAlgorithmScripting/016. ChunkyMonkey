@@ -1,0 +1,17 @@
+CHunky Monkey
+Write a function that splits an array (first argument) into groups the length of size 
+(second argument) and returns them as a two-dimensional array.
+
+function chunkArrayInGroups(arr, size) {
+  var arr1=[];
+  var j=0,temp=size;
+  var len = arr.length/size;
+  for (var i=0; i<len; i++){
+    arr1.push(arr.slice(j,size));
+    j+=temp;
+    size+=temp;
+  }
+  return arr1;
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
