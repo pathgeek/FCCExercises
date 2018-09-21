@@ -1,0 +1,18 @@
+Remove all falsy values from an array.
+
+Falsy values in JavaScript are false, null, 0, "", undefined, and NaN.
+
+Hint: Try converting each value to a Boolean.
+
+Boolean is the constructor for, well, booleans. This is equivalent to 
+var myFilterArray = myArray.filter((v) => new Boolean(v));. 
+If the given value is 0, -0 (I know...), null, false, NaN, undefined, or 
+the empty string, the resulting Boolean will be false. If anything else is 
+passed, it'll be true
+--------------
+function bouncer(arr) {
+  return arr.filter(function(v) { return !!v; });
+}
+
+bouncer([7, "ate", "", false, 9]);
+
