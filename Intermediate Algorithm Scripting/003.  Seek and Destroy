@@ -7,3 +7,10 @@ the same value as these arguments.
 Note: You have to use the arguments object.
 
 
+  /* Put all arguments in an array using spread operator and remove elements 
+     starting from 1 */
+  const args = [...arguments].splice(1);
+  /* Check whether arguments include elements from an array and return all that 
+     do not include(false) */
+  return arr.filter(el => !args.includes(el));
+}
