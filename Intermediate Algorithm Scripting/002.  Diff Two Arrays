@@ -1,1 +1,24 @@
 Diff Two Arrays
+
+
+Compare two arrays and return a new array with any items only found in one of the 
+two given arrays, but not both. In other words, return the symmetric difference of 
+the two arrays.
+
+Note: You can return the array with its elements in any order.
+ My notes:
+    1Check: they’re the same object type (array vs. object).
+    2Check: have the same number of items.
+    3Check: each item is equal to its counterpart in the other array or object.
+    4Check:  they’re the same object type (array vs. object vs. string vs. number vs. function).
+    5Check:  they have the same value.
+    
+function diffArray(arr1, arr2) {
+  let difference = arr1
+                 .filter(x => !arr2.includes(x))
+                 .concat(arr2.filter(x => !arr1.includes(x)));
+  return difference; 
+  // Same, same; but different.
+  }
+
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
