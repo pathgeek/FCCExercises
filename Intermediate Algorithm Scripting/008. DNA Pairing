@@ -13,3 +13,54 @@ function pairElement(str) {
 
 pairElement("GCG");
 ---------------
+function pairElement(str) {
+  //set up variables: output = array of arrays. instantiate here
+  let output = [];
+
+  // create the pairs
+  var look = function(char){
+    switch(char){
+      case "A":
+        output.push(['A', 'T']);
+        break;
+      case "T":
+        output.push(['T', 'A']);
+        break; 
+      case "C":
+        output.push(['C', 'G']);
+        break;  
+      case "G":
+        output.push(['G', 'C']);
+        break;
+
+    }
+  };
+      // Loop through the input and pair.
+      for (var i = 0; i < str.length; i++) {
+        look(str[i]);
+      }
+      return output;
+    }
+  
+
+pairElement("GCG");
+
+----------------------
+or 
+----------------------
+   function pairElement(str) {
+    //create object for pair lookup
+    var pairs = {
+      "A": "T",
+      "T": "A",
+      "C": "G",
+      "G": "C"
+    }
+    //split string into array of characters
+    var arr = str.split("");
+    //map character to array of character and matching pair
+    return arr.map(x => [x,pairs[x]]);
+  }
+
+  //test here
+  pairElement("GCG");
